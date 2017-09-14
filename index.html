@@ -10,7 +10,7 @@
 </head>
 <body ng-controller="bomberControl"> 
     <div class="mapContainer" ng-class-odd="'path'" data-ng-class-even="'bedrock'" ng-repeat="x in xcord track by $index">
-        <cell ng-class-odd="'path'" data-ng-class-even="'bedrock'" ng-repeat="y in ycord track by $index" >{{x}}.{{y}}</cell>
+        <cell ng-class-odd="'path'" data-ng-class-even="'bedrock'" ng-repeat="y in ycord track by $index" >{{y}}.{{x}}</cell>
     </div>
     
     <script src="./lib/jquery-3.2.1.js"></script>

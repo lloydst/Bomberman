@@ -10,27 +10,26 @@ app.controller('bomberControl', function($scope) {
     var xplayer = (xplayer===undefined) ? 5: xplayer;
     var yplayer = (yplayer===undefined) ? 5: yplayer;
     
-    $( document ).ready(function() {
-        console.log( "ready!" );
-        start();
-        
-
-        
-        
-    });
+    
     // makes playerlocation visable
     function playerlocation() {
-        $('cell:not(:contains('+xplayer+'.'+yplayer+'))').removeClass("player"); //clears it so only 1 player should be there (doesnt ully workf)
+        $('.path').removeClass("player"); //clears it so only 1 player should be there (doesnt fully work)
+        $('.' + yplayer +' .' + xplayer).addClass("player");
         
-        $('cell:contains('+xplayer+'.'+yplayer+')').addClass("player");
-        $('cell:contains('+xplayer+'.'+yplayer+')').removeClass("path");
-        }
-        function start() {
-            xplayer = 5;
-            yplayer = 5;
-            playerlocation();
-            
-        }
+    }
+    angular.element(document).ready(function () {
+        xplayer = 5;
+        yplayer = 5;
+        playerlocation();
+        
+    });
+
+    //function start() {
+    //    xplayer = 5;
+    //    yplayer = 5;
+    //    playerlocation();
+    //    
+    //}
     
     
     
@@ -86,9 +85,9 @@ app.controller('bomberControl', function($scope) {
         }
         
     }
-
+    
     function bomb(){
-        $('cell').hasClass('player')
+        console.log('Boom!')
     }
         //   function   key keyid   type:
         // ''   up      38  up      ArrowKey
@@ -114,7 +113,8 @@ app.controller('bomberControl', function($scope) {
                 bomb()
                 playerlocation()
             }
-          });
+        });
+
     console.log(xplayer,yplayer)
     
 });

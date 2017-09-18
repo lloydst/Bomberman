@@ -18,7 +18,7 @@ cell {
 
 .path{
     
-     background-image: url("../assets/img/2x2-sand-path,50X50.jpg");
+     background-image: url("../img/2x2-sand-path,50X50.jpg");
      background-size: 4em;
      content: ' ';
  }
@@ -30,5 +30,13 @@ cell {
 
 .player { 
     background-color: blue;
+    background-image: none;
+}
+.bomb {
+    background-color: red !important;
+    background-image: none;
+}
+.explosion {
+    background-color: orange;
     background-image: none;
 }

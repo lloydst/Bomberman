@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body ng-controller="bomberControl"> 
-    <div class="mapContainer path {{x}}" data-ng-class-even="'bedrock'" ng-repeat="x in xcord track by $index"  ng-class="{'player' : xplayer == x}">
-        <cell class="path {{y}}" data-ng-class-even="'bedrock'" ng-repeat="y in ycord track by $index" >{{y}}.{{x}}</cell>
+    <div class="mapContainer path {{y}}" data-ng-class-even="'bedrock'" ng-repeat="y in ycord track by $index"  ng-class="{'player' : yplayer == y}">
+        <cell class="path {{x}}" data-ng-class-even="'bedrock'" ng-repeat="x in xcord track by $index" >{{x}}.{{y}}</cell>
     </div>
     
     <script src="./js/lib/jquery.js"></script>

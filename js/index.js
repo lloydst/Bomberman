@@ -2,11 +2,12 @@ var app = angular.module('bombermanApp',[]);
 app.controller('bomberControl', function($scope) {
     $scope.xcord = ['1','2','3','4','5','6','7','8','9','10','11'];
     $scope.ycord = ['1','2','3','4','5','6','7','8','9','10','11'];
+    
     var xcord = $scope.xcord;
     var ycord = $scope.ycord;
     var x = xcord[x];
     var y = ycord[y];
-
+    
     var xplayer = (xplayer===undefined) ? 5: xplayer;
     var yplayer = (yplayer===undefined) ? 5: yplayer;
     
@@ -24,17 +25,94 @@ app.controller('bomberControl', function($scope) {
         
     });
 
-    //function start() {
-    //    xplayer = 5;
-    //    yplayer = 5;
-    //    playerlocation();
-    //    
-    //}
-    
-    
-    
     function left() {
-        console.log('left() called')
+        if(xplayer == 3){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=3;
+            } 
+        } else if(xplayer == 5){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=5;
+            } 
+        } else if(xplayer == 7){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=7;
+            } 
+        } else if(xplayer == 9){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=9;
+            } 
+        } else if(xplayer == 11){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=11;
+            } 
+        }
+        
         if (xplayer <= 1) {
             console.log('invalid move');
             xplayer = 1;
@@ -47,6 +125,109 @@ app.controller('bomberControl', function($scope) {
         
     }
     function right() {
+        if(xplayer == 1){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=1;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=1;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=1;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=1;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=1;
+            } 
+        } else if(xplayer == 3){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=3;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=3;
+            } 
+        } else if(xplayer == 5){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=5;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=5;
+            } 
+        } if(xplayer == 7){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=7;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=7;
+            } 
+        } else if(xplayer == 9){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=9;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=9;
+            } 
+        } else if(xplayer == 11){
+            if(yplayer == 2){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 4){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 6){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 8){
+                console.log("invalid move");
+                 return xplayer=11;
+            } else if(yplayer == 10){
+                console.log("invalid move");
+                 return xplayer=11;
+            } 
+        }
         console.log('right() called')
         if (xplayer >= 11) {
             console.log('invalid move');
@@ -60,7 +241,92 @@ app.controller('bomberControl', function($scope) {
         
     }
     function up() {
-        console.log('up() called')
+        if(yplayer == 3){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=3;
+            }
+        } else if(yplayer == 5){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=5;
+            } 
+        } else if(yplayer == 7){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=7;
+            } 
+        } else if(yplayer == 9){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=9;
+            } 
+        } else if(yplayer == 11){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=11;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=11;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=11;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=11;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=11;
+            } 
+        }
         if (yplayer <= 1) {
             console.log('invalid move');
             yplayer = 1;
@@ -74,6 +340,93 @@ app.controller('bomberControl', function($scope) {
     }
     function down() {
         console.log('down() called')
+        if(yplayer == 1){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=1;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=1;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=1;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=1;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=1;
+            } 
+        } else if(yplayer == 3){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=3;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=3;
+            } 
+        } else if(yplayer == 5){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=5;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=5;
+            } 
+        } else if(yplayer == 7){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=7;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=7;
+            } 
+        } else if(yplayer == 9){
+            if(xplayer == 2){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 4){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 6){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 8){
+                console.log("invalid move");
+                 return yplayer=9;
+            } else if(xplayer == 10){
+                console.log("invalid move");
+                 return yplayer=9;
+            } 
+        } 
+
         if (yplayer >= 11) {
             console.log('invalid move');
             yplayer = 11;
@@ -95,7 +448,7 @@ app.controller('bomberControl', function($scope) {
         // ''   right   39  right   ArrowKey
         // ''   bomb    32  space   spaceBar
         
-        $( document ).keydown(function(event) {
+        angular.element(document).keydown(function(event) {
             //alert( "Key: " + event.which );
             if (event.which === 37) {
                 left()
@@ -115,6 +468,6 @@ app.controller('bomberControl', function($scope) {
             }
         });
 
-    console.log(xplayer,yplayer)
+    
     
 });

@@ -447,6 +447,9 @@ app.controller('bomberControl', function($scope) {
             bombLoc.removeClass("bomb");
             bombLoc.addClass("explosion");
             setTimeout(function() {
+                if (bombLoc.hasClass("player")) {
+                    alert("You died")
+                }
                 bombLoc.removeClass("explosion");
             }, 1000);
         }, 3000);
